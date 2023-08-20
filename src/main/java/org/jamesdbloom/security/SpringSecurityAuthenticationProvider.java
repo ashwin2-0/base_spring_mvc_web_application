@@ -37,6 +37,7 @@ public class SpringSecurityAuthenticationProvider implements AuthenticationProvi
 
     @Override
     public boolean supports(Class<?> authentication) {
+         System.out.println("Size of ArrayList: ");
         return UsernamePasswordAuthenticationToken.class.equals(authentication);
     }
 }
